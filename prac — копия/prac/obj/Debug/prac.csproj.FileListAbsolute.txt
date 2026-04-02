@@ -1,0 +1,42 @@
+C:\Users\Violight\source\repos\prac\prac\bin\Debug\prac.exe.config
+C:\Users\Violight\source\repos\prac\prac\bin\Debug\prac.exe
+C:\Users\Violight\source\repos\prac\prac\bin\Debug\prac.pdb
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.csproj.AssemblyReference.cache
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\App.g.cs
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac_MarkupCompile.cache
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac_MarkupCompile.lref
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.g.resources
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.Properties.Resources.resources
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.csproj.GenerateResource.cache
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.csproj.CoreCompileInputs.cache
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.exe
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.pdb
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\View\MainWindow.g.cs
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\View\MainWindow.baml
+C:\Users\Violight\source\repos\prac\prac\obj\Debug\prac.exe.config
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.csproj.AssemblyReference.cache
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\App.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac_MarkupCompile.cache
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac_MarkupCompile.lref
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.exe
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.pdb
+C:\Users\Violight\source\repos\prac — копия\prac\bin\Debug\prac.exe.config
+C:\Users\Violight\source\repos\prac — копия\prac\bin\Debug\prac.exe
+C:\Users\Violight\source\repos\prac — копия\prac\bin\Debug\prac.pdb
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.g.resources
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.Properties.Resources.resources
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.csproj.GenerateResource.cache
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.csproj.CoreCompileInputs.cache
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\ForgotPasswordWindow.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\PreViewWindow.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\RegistrationWindow.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\ForgotPasswordWindow.baml
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\PreViewWindow.baml
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\RegistrationWindow.baml
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\inter.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac_Content.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\inter.baml
+C:\Users\Violight\source\repos\prac — копия\prac\bin\Debug\View\vid\687648ad7a097a7017204cd08bc9d028.mp4
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\MainWindow.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\Vhod\MainWindow.baml
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.exe.config

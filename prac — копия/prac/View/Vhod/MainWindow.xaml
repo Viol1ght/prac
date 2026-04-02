@@ -1,0 +1,85 @@
+﻿<Window x:Class="prac.View.Vhod.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:prac.View.Vhod"
+    mc:Ignorable="d"
+    Title="Authorization" Height="600" Width="900"
+    WindowStyle="None" WindowStartupLocation="CenterScreen"
+    Background="Transparent" 
+    AllowsTransparency="True">
+
+    <Grid>
+        <!-- Слой 1: Фон (самый нижний, без скругления) -->
+        <Image Source="/View/img/df69947c204279ca5b3ccafe74f6a0c7.jpg" 
+               Stretch="UniformToFill" 
+               Opacity="1"/>
+
+        <!-- Слой 2: Подложка (цвет #708090 с прозрачностью) -->
+        <Border Background="#80708090" 
+                CornerRadius="20" 
+                Margin="20"/>
+
+        <!-- Слой 3: Основной контент -->
+        <Grid Margin="20">
+            <!-- Кнопки управления окном -->
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Top"
+                        Margin="0,15,15,0"
+                        Panel.ZIndex="100">
+                <Button x:Name="btnMin" Content="─"
+                        Width="35" Height="35" 
+                        Background="#FF567FCB"
+                        Foreground="White"
+                        Click="btnMin_Click"/>
+                <Button x:Name="btnMax" Content="□"
+                        Width="35" Height="35" Margin="5,0,0,0"
+                        Background="DarkGoldenrod"
+                        Foreground="White"
+                        Click="btnMax_Click"/>
+                <Button x:Name="btnClose" Content="X"
+                        Width="35" Height="35" Margin="5,0,0,0"
+                        Background="#FF9D14DA"
+                        Foreground="White"
+                        Click="btnClose_Click"/>
+            </StackPanel>
+
+            <!-- Форма авторизации -->
+            <Border Height="450" Width="650" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Background="#708090" 
+                    CornerRadius="30" 
+                    Opacity="0.95">
+                <StackPanel Margin="0,40,0,0">
+                    <TextBlock Text="Авторизация" FontFamily="Times New Roman"
+                        FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                    <TextBlock Text="Логин" FontFamily="Times New Roman"
+                        FontSize="24" HorizontalAlignment="Left" Margin="100,10,0,0"/>
+                    <TextBox x:Name="Login" FontSize="18" Width="400" Height="40" 
+                             Margin="100,5,0,0" Padding="8"/>
+                    <TextBlock Text="Пароль" FontFamily="Times New Roman"
+                        FontSize="24" HorizontalAlignment="Left" Margin="100,15,0,0"/>
+                    <PasswordBox x:Name="Pass" FontSize="18" Width="400" Height="40" 
+                                 Margin="100,5,0,0" Padding="8"/>
+                    <Button x:Name="LoginButton" Content="Войти"
+                        FontFamily="Times New Roman" FontSize="24"
+                        HorizontalAlignment="Center" Margin="0,30,0,0"
+                        Background="#FF1B2FB2" Foreground="White"
+                        Width="200" Height="55" Click="LoginButton_Click"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,20">
+                        <TextBlock FontSize="18" FontFamily="Times New Roman" Foreground="Black">
+                            <Hyperlink Click="Reg_Click" Foreground="Black">Зарегистрироваться</Hyperlink>
+                        </TextBlock>
+                        <TextBlock Text=" | " FontSize="18" FontFamily="Times New Roman" Foreground="Black"/>
+                        <TextBlock FontSize="18" FontFamily="Times New Roman" Foreground="Black">
+                            <Hyperlink Click="ForgetPass_Click" Foreground="Black">Не помню пароль</Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
