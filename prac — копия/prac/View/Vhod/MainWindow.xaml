@@ -11,19 +11,23 @@
     AllowsTransparency="True">
 
     <Grid>
-        <!-- Слой 1: Фон (самый нижний, без скругления) -->
+
         <Image Source="/View/img/df69947c204279ca5b3ccafe74f6a0c7.jpg" 
                Stretch="UniformToFill" 
                Opacity="1"/>
 
-        <!-- Слой 2: Подложка (цвет #708090 с прозрачностью) -->
+
         <Border Background="#80708090" 
                 CornerRadius="20" 
                 Margin="20"/>
 
-        <!-- Слой 3: Основной контент -->
+
         <Grid Margin="20">
-            <!-- Кнопки управления окном -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+
             <StackPanel Orientation="Horizontal" 
                         HorizontalAlignment="Right" 
                         VerticalAlignment="Top"
@@ -46,13 +50,13 @@
                         Click="btnClose_Click"/>
             </StackPanel>
 
-            <!-- Форма авторизации -->
+
             <Border Height="450" Width="650" 
                     HorizontalAlignment="Center" 
-                    VerticalAlignment="Center"
+                    VerticalAlignment="Top"
                     Background="#708090" 
                     CornerRadius="30" 
-                    Opacity="0.95">
+                    Opacity="0.95" Margin="0,55,0,0" Grid.RowSpan="2">
                 <StackPanel Margin="0,40,0,0">
                     <TextBlock Text="Авторизация" FontFamily="Times New Roman"
                         FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,20"/>

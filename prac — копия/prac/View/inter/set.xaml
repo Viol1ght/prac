@@ -1,0 +1,284 @@
+﻿<Window x:Class="prac.View.inter.set"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prac.View.inter"
+        mc:Ignorable="d"
+        Title="Settings_acc" Height="750" Width="1200"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" 
+        Background="Transparent">
+
+    <Window.Resources>
+        <Style x:Key="TrigBth" TargetType="Button">
+            <Setter Property="Background" Value="#88eaf7"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10,5"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                    BorderThickness="0" 
+                                    CornerRadius="3"
+                                    Width="300" Height="50">
+                            <ContentPresenter HorizontalAlignment="Left" 
+                                                  VerticalAlignment="Center" 
+                                                  Margin="10,0,0,0"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF1E3A8A"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border Background="White" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0"
+                    Background="#88eaf7"
+                    CornerRadius="20,0,0,20">
+                <StackPanel>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                    </Grid>
+                    <Button Style="{StaticResource TrigBth}"
+                                    x:Name="Shop"
+                                    FontFamily="Century Gothic"
+                                    FontSize="16"
+                                    HorizontalAlignment="Left"
+                                    Margin="0 180 0 0" Click="maga_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/telega2.jpg"
+                                           Width="30" Height="30"
+                                           Margin="10,0,10,0"/>
+                            <TextBlock Text="Магазин" FontFamily="Century Gothic" 
+                                           FontWeight="ExtraLight" TextWrapping="Wrap"
+                                           FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource TrigBth}"
+                                    x:Name="Dok"
+                                    FontFamily="Century Gothic"
+                                    FontSize="16"
+                                    HorizontalAlignment="Left"
+                                    Margin="0 0 0 0" Click="bymaga_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/nomen.jpg"
+                                           Width="30" Height="30"
+                                           Margin="10,0,10,0"/>
+                            <TextBlock Text="Номенклатура" FontFamily="Century Gothic" 
+                                           FontWeight="ExtraLight" TextWrapping="Wrap"
+                                           FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource TrigBth}"
+                                    x:Name="Game"
+                                    FontFamily="Century Gothic"
+                                    FontSize="16"
+                                    HorizontalAlignment="Left"
+                                    Margin="0 0 0 0" Click="game_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/gamepade.png"
+                                           Width="30" Height="30"
+                                           Margin="10,0,10,0"/>
+                            <TextBlock Text="Игры" FontFamily="Century Gothic" 
+                                           FontWeight="ExtraLight" TextWrapping="Wrap"
+                                           FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource TrigBth}"
+                                    x:Name="Set"
+                                    FontFamily="Century Gothic"
+                                    FontSize="16"
+                                    HorizontalAlignment="Left"
+                                    Margin="0 0 0 0" Click="set_Click" Background="#64b2bd">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/set2.jpg"
+                                           Width="30" Height="30"
+                                           Margin="10,0,10,0"/>
+                            <TextBlock Text="Настройки аккаунта" FontFamily="Century Gothic" 
+                                           FontWeight="ExtraLight" TextWrapping="Wrap"
+                                           FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+
+            </Border>
+            <Grid Grid.Column="1" Background="Gray">
+                <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Content="-" FontSize="20"
+                            Width="30" Height="30" Margin="5"
+                            Background="#FF567FCB" Foreground="White"
+                            Click="btnMin_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Grid.Column="1" Content="O" FontSize="20"
+                            Width="30" Height="30" Margin="5"
+                            Background="DarkGoldenrod" Foreground="White"
+                            Click="btnMax_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Grid.Column="2" Content="X" FontSize="20"
+                            Width="30" Height="30" Margin="5"
+                            Background="#FF9D140A" Foreground="White"
+                            Click="btnClose_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </Grid>
+
+                <Border x:Name="Foto" Height="300" Width="300" HorizontalAlignment="Left"
+                    VerticalAlignment="Top" Margin="40"
+                    Background="White" CornerRadius="300" BorderBrush="Black" BorderThickness="1">
+                    <Grid>
+                        <Image x:Name="UserImage" Stretch="Fill"/>
+                        <Button x:Name="btnAdd" Content="+" Height="50" 
+                            Margin="238,236,10,12" FontSize="30"
+                            Background="#FF473837" 
+                            Foreground="White"
+                            Click="btnAdd_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+                </Border>
+
+                <StackPanel Grid.Column="1"
+                    Margin="400 100 0 0"
+                    VerticalAlignment="Top" HorizontalAlignment="Left">
+
+                    <TextBlock Text="{Binding UserNek}" FontFamily="Century Gothic" 
+                       FontWeight="ExtraLight" TextWrapping="Wrap" FontSize="30"
+                       Foreground="White"/>
+                    <TextBlock Text="{Binding UserName}" FontFamily="Century Gothic" 
+                       FontWeight="ExtraLight" TextWrapping="Wrap" FontSize="30" 
+                       Foreground="White"/>
+                    <TextBlock Text="{Binding Login}" FontFamily="Century Gothic" 
+                       FontWeight="ExtraLight" TextWrapping="Wrap" FontSize="30"
+                       Foreground="White"/>
+                    <TextBlock Text="{Binding Email}" FontFamily="Century Gothic" 
+                       FontWeight="ExtraLight" TextWrapping="Wrap" FontSize="30" 
+                       Foreground="White"/>
+                </StackPanel>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 50 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Content="Редактировать профиль" FontSize="20"
+                            Width="260" Height="50" Margin="30" FontFamily="Century Gothic" Foreground="White" 
+                            Click="btnEdit_Click" Background="Red" BorderBrush="#FF9A9797">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Grid.Column="2" Content="Выйти из аккаунта" FontSize="20"
+                            Width="260" Height="50" Margin="20" FontFamily="Century Gothic" Foreground="White" 
+                            Click="btnExite_Click" Background="Blue" BorderBrush="#FF9A9797">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Grid.Column="3" Content="Удалить профиль" FontSize="20"
+                            Width="260" Height="50" Margin="30" FontFamily="Century Gothic" Foreground="Red" 
+                            Click="btnDel_Click" Background="White" BorderBrush="#FF9A9797">
+                        <Button.Effect>
+                            <DropShadowEffect/>
+                        </Button.Effect>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

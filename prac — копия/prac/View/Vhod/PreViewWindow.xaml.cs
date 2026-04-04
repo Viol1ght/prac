@@ -14,8 +14,8 @@ namespace prac.Vhod
 
         private void VideoPlayer_MediaEnded(object sender, RoutedEventArgs e)
         {
-            inter interWindow = new inter();
-            interWindow.Show();
+            maga magaWindow = new maga();
+            magaWindow.Show();
             this.Close();
         }
 

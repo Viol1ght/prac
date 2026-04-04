@@ -1,0 +1,292 @@
+﻿<Window x:Class="prac.View.inter.bymaga"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prac.View.inter"
+        mc:Ignorable="d"
+        Title="DokTable" Height="750" Width="1200"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" 
+        Background="Transparent">
+
+    <Window.Resources>
+        <Style x:Key="TrigBth" TargetType="Button">
+            <Setter Property="Background" Value="#88eaf7"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10,5"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderThickness="0" 
+                                CornerRadius="3"
+                                Width="300" Height="50">
+                            <ContentPresenter HorizontalAlignment="Left" 
+                                              VerticalAlignment="Center" 
+                                              Margin="10,0,0,0"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF1E3A8A"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TabItem">
+            <Setter Property="Background" Value="#FFA6B8F1"/>
+            <Setter Property="Foreground" Value="#FF111111"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+    </Window.Resources>
+
+    <Border Background="White" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0"
+                Background="#88eaf7"
+                CornerRadius="20,0,0,20">
+                <StackPanel>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border x:Name="Ava"  Width="100" Height="100"
+                            Background="White"
+                            CornerRadius="100"/>
+
+                        <StackPanel Grid.Column="1"
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center">
+
+                            <TextBlock Text="{Binding UserNek}" FontFamily="Century Gothic" 
+                                       FontWeight="ExtraLight" TextWrapping="Wrap" FontSize="20"
+                                       Foreground="White"/>
+                            <TextBlock Text="{Binding UserName}" FontFamily="Century Gothic" 
+                                       FontWeight="ExtraLight" TextWrapping="Wrap" FontSize="20" 
+                                       Foreground="White"/>
+
+                        </StackPanel>
+                    </Grid>
+                    <Button Style="{StaticResource TrigBth}"
+                                x:Name="Shop"
+                                FontFamily="Century Gothic"
+                                FontSize="16"
+                                HorizontalAlignment="Left"
+                                Margin="0 80 0 0" Click="maga_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/telega2.jpg"
+                                       Width="30" Height="30"
+                                       Margin="10,0,10,0"/>
+                            <TextBlock Text="Магазин" FontFamily="Century Gothic" 
+                                       FontWeight="ExtraLight" TextWrapping="Wrap"
+                                       FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource TrigBth}"
+                                x:Name="Dok"
+                                FontFamily="Century Gothic"
+                                FontSize="16"  Background="#64b2bd"
+                                HorizontalAlignment="Left"
+                                Margin="0 0 0 0" Click="bymaga_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/nomen.jpg"
+                                       Width="30" Height="30"
+                                       Margin="10,0,10,0"/>
+                            <TextBlock Text="Номенклатура" FontFamily="Century Gothic" 
+                                       FontWeight="ExtraLight" TextWrapping="Wrap"
+                                       FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource TrigBth}"
+                                x:Name="Game"
+                                FontFamily="Century Gothic"
+                                FontSize="16"
+                                HorizontalAlignment="Left"
+                                Margin="0 0 0 0" Click="game_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/gamepade.png"
+                                       Width="30" Height="30"
+                                       Margin="10,0,10,0"/>
+                            <TextBlock Text="Игры" FontFamily="Century Gothic" 
+                                       FontWeight="ExtraLight" TextWrapping="Wrap"
+                                       FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Style="{StaticResource TrigBth}"
+                                x:Name="Set"
+                                FontFamily="Century Gothic"
+                                FontSize="16"
+                                HorizontalAlignment="Left"
+                                Margin="0 0 0 0" Click="set_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/set2.jpg"
+                                       Width="30" Height="30"
+                                       Margin="10,0,10,0"/>
+                            <TextBlock Text="Настройки аккаунта" FontFamily="Century Gothic" 
+                                       FontWeight="ExtraLight" TextWrapping="Wrap"
+                                       FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
+
+                </StackPanel>
+
+            </Border>
+            <Grid Grid.Column="1">
+                <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Content="-" FontSize="20"
+                        Width="30" Height="30" Margin="5"
+                        Background="#FF567FCB" Foreground="White"
+                        Click="btnMin_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                    CornerRadius="5"
+                                    BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Grid.Column="1" Content="O" FontSize="20"
+                        Width="30" Height="30" Margin="5"
+                        Background="DarkGoldenrod" Foreground="White"
+                        Click="btnMax_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                    CornerRadius="5"
+                                    BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Grid.Column="2" Content="X" FontSize="20"
+                        Width="30" Height="30" Margin="5"
+                        Background="#FF9D140A" Foreground="White"
+                        Click="btnClose_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                                    CornerRadius="5"
+                                    BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </Grid>
+                <TabControl Margin="0,34,0,49">
+                    <TabItem Header="Товары">
+                        <Grid Background="Gray">
+                            <DataGrid AutoGenerateColumns="False"
+                              Margin="10"
+                              CanUserAddRows="False"
+                              IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="№" Binding="{Binding Id}" Width="Auto"/>
+                                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Другое">
+                        <Grid Background="Gray">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="89*"/>
+                                <ColumnDefinition Width="806*"/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="242*"/>
+                        <RowDefinition Height="509*"/>
+                    </Grid.RowDefinitions>
+                    <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Content="Добавить" FontSize="20"
+                            Width="100" Height="30" Margin="8"
+                            Background="#FF6A6A6A" Foreground="White"
+                            Click="btnAdd_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Grid.Column="1" Content="Редактировать" FontSize="20"
+                            Width="150" Height="30" Margin="8"
+                            Background="#FF929292" Foreground="White"
+                            Click="btnEd_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button Grid.Column="2" Content="Удалить" FontSize="20"
+                            Width="100" Height="30" Margin="8"
+                            Background="#FF9D140A" Foreground="White"
+                            Click="btnDel_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"
+                                        BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -12,19 +12,19 @@
         AllowsTransparency="True">
 
     <Grid>
-        <!-- Слой 1: Фон (самый нижний) -->
+        
         <Image Source="/View/img/df69947c204279ca5b3ccafe74f6a0c7.jpg" 
                Stretch="UniformToFill" 
                Opacity="1"/>
 
-        <!-- Слой 2: Подложка -->
+        
         <Border Background="#80708090" 
                 CornerRadius="20" 
                 Margin="20"/>
 
-        <!-- Слой 3: Основной контент -->
+        
         <Grid Margin="20">
-            <!-- Форма регистрации -->
+            
             <Border Height="580" Width="700" 
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Center"
@@ -32,7 +32,7 @@
                     CornerRadius="30"
                     Opacity="0.95">
                 <Grid>
-                    <!-- Фото профиля с кнопкой "+" -->
+                    
                     <Border Width="140" Height="140" CornerRadius="70" 
                             HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0"
                             Background="LightGray" BorderBrush="Gray" BorderThickness="2">
@@ -64,12 +64,12 @@
                         <TextBox x:Name="Nickname" FontSize="18" Width="450" Height="40" 
                                  Margin="100,5,0,0" Padding="8"/>
 
-                        <!-- Поле Пароль с глазиком ВНУТРИ -->
+                        
                         <TextBlock Text="Пароль" FontFamily="Times New Roman"
                                    FontSize="22" HorizontalAlignment="Left" Margin="100,15,0,0"/>
 
                         <Grid Margin="100,5,0,0" Width="450" Height="40">
-                            <!-- PasswordBox (скрытый пароль) -->
+                            
                             <PasswordBox x:Name="Pass" 
                                          FontSize="18" 
                                          Width="450" 
@@ -77,7 +77,7 @@
                                          Padding="8,0,35,0"
                                          VerticalAlignment="Center"/>
 
-                            <!-- TextBox (видимый пароль) -->
+                            
                             <TextBox x:Name="PassText" 
                                      FontSize="18" 
                                      Width="450" 
@@ -87,7 +87,7 @@
                                      VerticalAlignment="Center"
                                      TextChanged="PassText_TextChanged"/>
 
-                            <!-- Кнопка-глазик внутри поля справа -->
+                            
                             <Button x:Name="TogglePasswordButton" 
                                     Width="30" Height="30" 
                                     HorizontalAlignment="Right"
@@ -116,7 +116,7 @@
                         </Button>
                     </StackPanel>
 
-                    <!-- Кнопка назад внутри формы регистрации -->
+                    
                     <Button x:Name="BackButton" Content="←"
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Top"
@@ -137,7 +137,7 @@
             </Border>
         </Grid>
 
-        <!-- Кнопки управления окном (Min, Max, Close) - на переднем плане -->
+        
         <StackPanel Orientation="Horizontal" 
                     HorizontalAlignment="Right" 
                     VerticalAlignment="Top"

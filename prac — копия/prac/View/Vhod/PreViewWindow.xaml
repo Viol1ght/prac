@@ -10,15 +10,15 @@
         WindowStyle="None">
 
     <Grid>
-        <!-- Фоновое видео -->
+        
         <MediaElement
                       Source="View/vid/687648ad7a097a7017204cd08bc9d028.mp4"
                       LoadedBehavior="Play"
                       Stretch="Fill"
-                      IsMuted="False"
+                      IsMuted="True"
                       MediaEnded="VideoPlayer_MediaEnded"/>
 
-        <!-- Текст поверх видео -->
+        
         <TextBlock Text="Добро пожаловать!"
                    FontSize="56"
                    FontWeight="Bold"

@@ -55,7 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\inter\inter.xaml">
+    <Page Include="View\inter\bymaga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\inter\game.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\inter\maga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\inter\set.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -79,8 +91,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="View\inter\inter.xaml.cs">
-      <DependentUpon>inter.xaml</DependentUpon>
+    <Compile Include="View\inter\bymaga.xaml.cs">
+      <DependentUpon>bymaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\inter\game.xaml.cs">
+      <DependentUpon>game.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\inter\maga.xaml.cs">
+      <DependentUpon>maga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\inter\set.xaml.cs">
+      <DependentUpon>set.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Vhod\ForgotPasswordWindow.xaml.cs">
       <DependentUpon>ForgotPasswordWindow.xaml</DependentUpon>
@@ -132,13 +153,13 @@
     <Resource Include="View\img\view.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\img\photo_2026-04-02_00-28-11.jpg" />
     <Resource Include="View\img\photo_5363890893003364313_m-Photoroom.png" />
-    <Resource Include="View\img\a77e71b6097a21ddac693bdb7c8dff23.jpg" />
-    <Resource Include="View\img\photo_2026-04-02_20-27-17.jpg" />
-    <Resource Include="View\img\photo_2026-04-02_20-27-23.jpg" />
-    <Resource Include="View\img\photo_2026-04-02_20-27-26.jpg" />
-    <Resource Include="View\img\photo_2026-04-02_20-37-35.jpg" />
+    <Resource Include="View\img\gamepade.png" />
+    <Resource Include="View\img\nomen.jpg" />
+    <Resource Include="View\img\set2.jpg" />
+    <Resource Include="View\img\setin.jpg" />
+    <Resource Include="View\img\telega2.jpg" />
+    <Resource Include="View\img\lypa.jpg" />
     <Content Include="View\vid\687648ad7a097a7017204cd08bc9d028.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
