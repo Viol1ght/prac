@@ -85,12 +85,15 @@ namespace prac.View.inter
 
         private void btnMin_click(object sender, RoutedEventArgs e)
         {
-
+            this.WindowState = WindowState.Minimized;
         }
 
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
-
+            if (this.WindowState == WindowState.Maximized)
+                this.WindowState = WindowState.Normal;
+            else
+                this.WindowState = WindowState.Maximized;
         }
 
         private void btnClose_click(object sender, RoutedEventArgs e)
@@ -116,6 +119,13 @@ namespace prac.View.inter
         private void Right_click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void bthBask_Click(object sender, RoutedEventArgs e)
+        {
+            basket basketWindow = new basket();
+            basketWindow.Show();
+            this.Close();
         }
     }
 }

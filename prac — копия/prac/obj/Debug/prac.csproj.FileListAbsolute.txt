@@ -45,4 +45,6 @@ C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\bym
 C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\game.baml
 C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\maga.baml
 C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\set.baml
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\basket.g.cs
+C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\View\inter\basket.baml
 C:\Users\Violight\source\repos\prac — копия\prac\obj\Debug\prac.exe.config

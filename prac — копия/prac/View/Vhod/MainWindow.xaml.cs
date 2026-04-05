@@ -14,7 +14,7 @@ namespace prac.View.Vhod
             InitializeComponent();
         }
 
-        // Кнопка "Войти" — открывает PreViewWindow
+        
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             PreViewWindow preViewWindow = new PreViewWindow();

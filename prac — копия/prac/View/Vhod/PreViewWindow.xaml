@@ -15,7 +15,7 @@
                       Source="View/vid/687648ad7a097a7017204cd08bc9d028.mp4"
                       LoadedBehavior="Play"
                       Stretch="Fill"
-                      IsMuted="True"
+                      IsMuted="False"
                       MediaEnded="VideoPlayer_MediaEnded"/>
 
         

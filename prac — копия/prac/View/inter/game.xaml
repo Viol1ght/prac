@@ -137,6 +137,23 @@
                         </StackPanel>
                     </Button>
 
+                    <Button Style="{StaticResource trigBth}" 
+            x:Name="bthBask" 
+            FontFamily="Century Gothic" 
+            FontSize="16" 
+            HorizontalAlignment="Left" 
+            Margin="0 0 0 0" Click="bthBask_Click">
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/View/img/corzina.jpg" 
+                   Width="30" Height="30" 
+                   Margin="10 0 10 0"/>
+                            <TextBlock Text="Корзина" FontFamily="Century Gothic"  
+                   FontWeight="ExtraLight" TextWrapping="Wrap" 
+                   FontSize="20" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+
                 </StackPanel>
 
             </Border>
